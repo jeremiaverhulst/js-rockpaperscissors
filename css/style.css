@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #8fbc8f;
+    color: #fdf5e6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+h1 {
+    color: #f9e2b7;
+    padding: 2rem 0 1rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem;
+    display: none;
+}
+
+h5 {
+    font-size: 2.4rem;
+    padding: 1rem 0 0;
+}
+
+h3 span, h4 span {
+    font-weight: 600;
+    color: #f9e2b7;
+}
+
+p {
+    color: #fdf5e6;
+}
+
+p span {
+    color: #556b2f;
+}
+
+a {
+    text-decoration: none;
+    color: #556b2f;
+    font-weight: 600;
+}
+
+a:hover, a:focus {
+    color: #f5cf88;
+    outline: none;
+}
+
+.generalInfo, .playerChoice, .gameInfo {
+    margin: 2rem;
+}
+
+.choice {
+    width: 256px;
+    padding: 1rem;
+}
+
+#paper:hover {
+
+}
+
+.choice:hover, .choice:focus {
+    border: 1px solid #80a980;
+    border-radius: 0.5rem;
+    background-color: #80a980;
+    outline: none;
+}
+
+#startGame {
+    background-color: #f9e2b7;
+    border-radius: 0.3rem;
+    color: #556b2f;
+    border: none;
+    margin: 0 0 1rem 0;
+    padding: 10px 30px;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+#startGame:hover, #startGame:focus {
+    background-color: #f5cf88;
+    border: none;
+    color: #556b2f;
+    outline: none;
+}
+
+footer {
+    font-size: 1rem;
+    margin-top: 2rem;
+}

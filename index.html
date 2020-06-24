@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock - Paper - Scissors</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Rock paper scissors</h1>
+        <p><span>&#8212;</span> a Javascript game <span>&#8212; </span></p>
+    </header>
+    <main>
+        <section class="generalInfo">
+            <h2 id="">Current score:</h2>
+            <h3>You <span id="userScore">0</span> : <span id="compScore">0</span> Bot</h3>
+        </section>
+        <section class="playerChoice">
+            <input id="rock" class="choice" type="image" src="img/rock.svg" alt="rock" value="rock">
+            <input id="paper" class="choice" type="image" src="img/paper.svg" alt="paper" value="paper">
+            <input id="scissors" class="choice" type="image" src="img/scissors.svg" alt="scissors" value="scissors">
+        </section>
+        <section class="gameInfo">
+            <button id="startGame">Let's play!</button>
+            <h4>You: <span id="userChoiceHand"></span> &#8212; Bot: <span id="compChoiceHand"></span></h4>
+            <h5 id="result"></h5>
+        </section>
+    </main>
+    <footer>
+        <p><span>&#8212;</span> Made during the COVID-19 pandemic by Jeremia Verhulst<span>&#8212; </span></p>
+    </footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
