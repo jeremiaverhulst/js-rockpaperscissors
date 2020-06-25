@@ -1,5 +1,7 @@
 let userChoice;
 let compChoice;
+let userCounter = 0;
+let compCounter = 0;
 
 document.getElementById("rock").addEventListener('click', function(){
     userChoice = this.value;
@@ -27,8 +29,6 @@ document.getElementById("startGame").addEventListener('click', function(){
 function compareChoices() {
     let userChoiceHand = document.getElementById("userChoiceHand");
     let compChoiceHand = document.getElementById("compChoiceHand");
-    let userCounter = 0;
-    let compCounter = 0;
     let userScore = document.getElementById("userScore");
     let compScore = document.getElementById("compScore");
     let result = document.getElementById("result");
