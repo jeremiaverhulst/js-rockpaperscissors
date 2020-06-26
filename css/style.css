@@ -85,6 +85,9 @@ a:hover, a:focus {
     position: relative;
     width: 20%;
     padding: 1rem;
+    -webkit-transform: rotate(115deg);
+    -moz-transform: rotate(115deg);
+    -o-transform: rotate(115deg);
     transform: rotate(115deg);
     animation: spin 750ms 1;
 }
@@ -93,6 +96,9 @@ a:hover, a:focus {
     position: relative;
     width: 20%;
     padding: 1rem;
+    -webkit-transform: scale(-1, 1) rotate(115deg);
+    -moz-transform: scale(-1, 1) rotate(115deg);
+    -o-transform: scale(-1, 1) rotate(115deg);
     transform: scale(-1, 1) rotate(115deg);
     animation: spinFlip 750ms 1;
 }
@@ -100,29 +106,41 @@ a:hover, a:focus {
 @keyframes spin {
     0% {
         -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
         transform: rotate(60deg);
     }
     20% {
         -webkit-transform: rotate(115deg);
+        -moz-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
         transform: rotate(115deg);
     }
     40% {
 
         -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
         transform: rotate(60deg);
     }
     60% {
 
         -webkit-transform: rotate(115deg);
+        -moz-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
         transform: rotate(115deg);
     }
     80% {
 
         -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
         transform: rotate(60deg);
     }
     100% {
         -webkit-transform: rotate(115deg);
+        -moz-transform: rotate(60deg);
+        -o-transform: rotate(60deg);
         transform: rotate(115deg);
     }
 }
@@ -130,29 +148,41 @@ a:hover, a:focus {
 @keyframes spinFlip {
      0% {
          -webkit-transform: scale(-1, 1) rotate(60deg);
+         -moz-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
          transform: scale(-1, 1) rotate(60deg);
      }
      20% {
          -webkit-transform: scale(-1, 1) rotate(115deg);
+         -moz-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
          transform: scale(-1, 1) rotate(115deg);
      }
      40% {
 
          -webkit-transform: scale(-1, 1) rotate(60deg);
+         -moz-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
          transform: scale(-1, 1) rotate(60deg);
      }
      60% {
 
          -webkit-transform: scale(-1, 1) rotate(115deg);
+         -moz-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
          transform: scale(-1, 1) rotate(115deg);
      }
      80% {
 
          -webkit-transform: scale(-1, 1) rotate(60deg);
+         -moz-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
          transform: scale(-1, 1) rotate(60deg);
      }
      100% {
          -webkit-transform: scale(-1, 1) rotate(115deg);
+         -moz-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
          transform: scale(-1, 1) rotate(115deg);
      }
  }
