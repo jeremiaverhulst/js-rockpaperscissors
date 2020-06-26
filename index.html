@@ -21,19 +21,19 @@
             <h3>You <span id="userScore">0</span> : <span id="compScore">0</span> Bot</h3>
         </section>
         <section id="playerChoice">
-            <input id="rock" class="choices" type="image" src="img/rock.svg" alt="rock" value="rock">
-            <input id="paper" class="choices" type="image" src="img/paper.svg" alt="paper" value="paper">
-            <input id="scissors" class="choices" type="image" src="img/scissors.svg" alt="scissors" value="scissors">
+            <img id="rock" class="choices" src="img/rock.svg" alt="rock gesture">
+            <img id="paper" class="choices" src="img/paper.svg" alt="paper gesture">
+            <img id="scissors" class="choices" src="img/scissors.svg" alt="scissors gesture">
         </section>
         <section id="gameAnimation">
-            <img src="img/rock.svg" alt="" id="userFist">
+            <img src="img/rock.svg" alt="fist gesture of user" id="userFist">
             <img src="img/rock.svg" alt="" id="compFist">
         </section>
         <section id="gameInfo">
             <h4>You: <span id="userChoiceHand"></span> &#8212; Bot: <span id="compChoiceHand"></span></h4>
             <h5 id="result"></h5>
-            <button id="startGame">Let's play!</button>
-            <button id="playAgain">Play again!</button>
+            <button id="startGame" class="gameBtn">Let's play!</button>
+            <button id="playAgain" class="gameBtn">Play again!</button>
             <button id="startOver">Start over</button>
         </section>
     </main>

@@ -4,27 +4,40 @@ let userCounter = 0;
 let compCounter = 0;
 let userScore = document.getElementById("userScore");
 let compScore = document.getElementById("compScore");
+let getPlayBtn = document.getElementById("startGame");
+
+function disablePlayBtn() {
+    getPlayBtn.disabled = true;
+    getPlayBtn.classList.add("disabledBtn");
+}
+disablePlayBtn();
 
 document.getElementById("rock").addEventListener('click', function(){
-    userChoice = this.value;
+    userChoice = this.id;
     console.log(userChoice);
+    getPlayBtn.disabled = false;
+    getPlayBtn.classList.remove("disabledBtn")
 });
 
 document.getElementById("paper").addEventListener('click', function(){
-    userChoice = this.value;
+    userChoice = this.id;
     console.log(userChoice);
+    getPlayBtn.disabled = false;
+    getPlayBtn.classList.remove("disabledBtn")
 });
 
 document.getElementById("scissors").addEventListener('click', function(){
-    userChoice = this.value;
+    userChoice = this.id;
     console.log(userChoice);
+    getPlayBtn.disabled = false;
+    getPlayBtn.classList.remove("disabledBtn")
 });
 
 let choices = ['rock', 'paper', 'scissors'];
 document.getElementById("startGame").addEventListener('click', function(){
     document.getElementById("playerChoice").style.display = "none";
     document.getElementById("gameAnimation").style.display = "block";
-    document.getElementById("startGame").style.display = "none";
+    getPlayBtn.style.display = "none";
     document.getElementById("playAgain").style.display = "none";
     compChoice = choices[Math.floor(Math.random() * choices.length)];
     console.log(compChoice);
@@ -138,4 +151,5 @@ document.getElementById("startOver").addEventListener('click', function(){
     document.querySelector("h5").style.display = "none";
     document.getElementById("userFist").setAttribute('src', "img/rock.svg");
     document.getElementById("compFist").setAttribute('src', "img/rock.svg");
+    disablePlayBtn();
 });

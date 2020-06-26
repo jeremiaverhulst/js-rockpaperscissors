@@ -153,13 +153,14 @@ a:hover, a:focus {
  }
 
 .choices:hover, .choices:focus {
-    border: 1px solid #80a980;
+    border: none;
     border-radius: 0.5rem;
     background-color: #80a980;
     outline: none;
+    cursor: pointer;
 }
 
-#startGame, #playAgain {
+.gameBtn {
     text-decoration: none;
     background-color: #f9e2b7;
     color: #556b2f;
@@ -171,15 +172,37 @@ a:hover, a:focus {
     cursor: pointer;
 }
 
-#startGame:hover,
-#startGame:focus,
-#playAgain:hover,
-#playAgain:focus {
+.gameBtn:hover,
+.gameBtn:focus {
     background-color: #f5cf88;
     border: none;
     color: #556b2f;
     outline: none;
 }
+
+.disabledBtn {
+    background-color: #dcdcdc;
+    color: #a9a9a9;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    border: none;
+    margin: 0 0 1rem 0;
+    padding: 10px 30px;
+    font: 400 1.6rem 'Montserrat';
+    cursor: not-allowed;
+}
+
+.disabledBtn:hover, .disabledBtn:focus {
+     background-color: #dcdcdc;
+     color: #a9a9a9;
+     text-decoration: none;
+     border-radius: 0.3rem;
+     border: none;
+     margin: 0 0 1rem 0;
+     padding: 10px 30px;
+     font: 400 1.6rem 'Montserrat';
+     cursor: not-allowed;
+ }
 
 #playAgain {
     display: none;
