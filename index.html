@@ -16,19 +16,25 @@
         <p><span>&#8212;</span> a Javascript game <span>&#8212; </span></p>
     </header>
     <main>
-        <section class="generalInfo">
+        <section id="generalInfo">
             <h2 id="">Current score:</h2>
             <h3>You <span id="userScore">0</span> : <span id="compScore">0</span> Bot</h3>
         </section>
-        <section class="playerChoice">
-            <input id="rock" class="choice" type="image" src="img/rock.svg" alt="rock" value="rock">
-            <input id="paper" class="choice" type="image" src="img/paper.svg" alt="paper" value="paper">
-            <input id="scissors" class="choice" type="image" src="img/scissors.svg" alt="scissors" value="scissors">
+        <section id="playerChoice">
+            <input id="rock" class="choices" type="image" src="img/rock.svg" alt="rock" value="rock">
+            <input id="paper" class="choices" type="image" src="img/paper.svg" alt="paper" value="paper">
+            <input id="scissors" class="choices" type="image" src="img/scissors.svg" alt="scissors" value="scissors">
         </section>
-        <section class="gameInfo">
-            <button id="startGame">Let's play!</button>
+        <section id="gameAnimation">
+            <img src="img/rock.svg" alt="" id="userFist">
+            <img src="img/rock.svg" alt="" id="compFist">
+        </section>
+        <section id="gameInfo">
             <h4>You: <span id="userChoiceHand"></span> &#8212; Bot: <span id="compChoiceHand"></span></h4>
             <h5 id="result"></h5>
+            <button id="startGame">Let's play!</button>
+            <button id="playAgain">Play again!</button>
+            <button id="startOver">Start over</button>
         </section>
     </main>
     <footer>
