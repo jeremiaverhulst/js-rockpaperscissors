@@ -214,6 +214,18 @@ footer {
 
 @media (max-width: 678px) {
 
+    body {
+        font-size: 1rem;
+    }
+
+    h3, h5 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.6rem;
+    }
+
     #playerChoice {
         margin: 2rem 0.5rem;
     }
@@ -225,5 +237,9 @@ footer {
     #userFist, #compFist {
         width: 30%;
         padding: 0.5rem;
+    }
+
+    #startGame, #playAgain {
+        font-size: 1.2rem;
     }
 }
