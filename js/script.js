@@ -6,11 +6,11 @@ let userScore = document.getElementById("userScore");
 let compScore = document.getElementById("compScore");
 let getPlayBtn = document.getElementById("startGame");
 
-function disablePlayBtn() {
+function disableBtn() {
     getPlayBtn.disabled = true;
     getPlayBtn.classList.add("disabledBtn");
 }
-disablePlayBtn();
+disableBtn();
 
 document.getElementById("rock").addEventListener('click', function(){
     userChoice = this.id;
@@ -142,6 +142,7 @@ document.getElementById("playAgain").addEventListener('click', function(){
     document.querySelector("h5").style.display = "none";
     document.getElementById("userFist").setAttribute('src', "img/rock.svg");
     document.getElementById("compFist").setAttribute('src', "img/rock.svg");
+    disableBtn();
 })
 
 document.getElementById("startOver").addEventListener('click', function(){
@@ -158,5 +159,5 @@ document.getElementById("startOver").addEventListener('click', function(){
     document.querySelector("h5").style.display = "none";
     document.getElementById("userFist").setAttribute('src', "img/rock.svg");
     document.getElementById("compFist").setAttribute('src', "img/rock.svg");
-    disablePlayBtn();
+    disableBtn();
 });
