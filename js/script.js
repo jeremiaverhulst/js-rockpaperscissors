@@ -14,21 +14,18 @@ disablePlayBtn();
 
 document.getElementById("rock").addEventListener('click', function(){
     userChoice = this.id;
-    console.log(userChoice);
     getPlayBtn.disabled = false;
     getPlayBtn.classList.remove("disabledBtn")
 });
 
 document.getElementById("paper").addEventListener('click', function(){
     userChoice = this.id;
-    console.log(userChoice);
     getPlayBtn.disabled = false;
     getPlayBtn.classList.remove("disabledBtn")
 });
 
 document.getElementById("scissors").addEventListener('click', function(){
     userChoice = this.id;
-    console.log(userChoice);
     getPlayBtn.disabled = false;
     getPlayBtn.classList.remove("disabledBtn")
 });
@@ -40,7 +37,6 @@ document.getElementById("startGame").addEventListener('click', function(){
     getPlayBtn.style.display = "none";
     document.getElementById("playAgain").style.display = "none";
     compChoice = choices[Math.floor(Math.random() * choices.length)];
-    console.log(compChoice);
     compareChoices();
     setTimeout(function(){
         document.querySelector("h4").style.display = "block";
@@ -59,6 +55,7 @@ function compareChoices() {
     let compChoiceHand = document.getElementById("compChoiceHand");
     let result = document.getElementById("result");
 
+    //compare choices of user and computer to see who won
     if (userChoice === compChoice) {
         userCounter += 0;
         compCounter += 0;
@@ -124,6 +121,16 @@ function compareChoices() {
             }, 750);
         }
     }
+
+    // Show message if user or computer takes the lead with more than 3 points ahead
+    let takingTheLead = document.getElementById("takingTheLead");
+    setTimeout(function(){
+        if ((userCounter - compCounter) >= 3){
+            takingTheLead.innerHTML = "WOW! You are <em>good</em> at this!";
+        } else if ((compCounter - userCounter) >= 3) {
+            takingTheLead.innerHTML = "Erm... You're losing against your own computer...";
+        }
+    }, 750);
 }
 
 document.getElementById("playAgain").addEventListener('click', function(){
@@ -140,8 +147,8 @@ document.getElementById("playAgain").addEventListener('click', function(){
 document.getElementById("startOver").addEventListener('click', function(){
     userCounter = 0;
     compCounter = 0;
-    userScore.innerText = userCounter;
-    compScore.innerText = compCounter;
+    userScore.innerText = toString(userCounter);
+    compScore.innerText = toString(compCounter);
     document.getElementById("playerChoice").style.display = "block";
     document.getElementById("gameAnimation").style.display = "none";
     document.getElementById("startGame").style.display = "inline-block";
