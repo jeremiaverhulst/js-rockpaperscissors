@@ -67,7 +67,7 @@ a:hover, a:focus {
 }
 
 .choices {
-    width: 256px;
+    width: 20%;
     padding: 1rem;
 }
 
@@ -78,18 +78,18 @@ a:hover, a:focus {
 
 #userFist{
     position: relative;
-    width: 256px;
+    width: 20%;
     padding: 1rem;
     transform: rotate(115deg);
-    animation: spin 1s 1;
+    animation: spin 750ms 1;
 }
 
 #compFist {
     position: relative;
-    width: 256px;
+    width: 20%;
     padding: 1rem;
     transform: scale(-1, 1) rotate(115deg);
-    animation: spinFlip 1s 1;
+    animation: spinFlip 750ms 1;
 }
 
 @keyframes spin {
@@ -209,4 +209,21 @@ a:hover, a:focus {
 footer {
     font-size: 1rem;
     margin-top: 2rem;
+}
+
+
+@media (max-width: 678px) {
+
+    #playerChoice {
+        margin: 2rem 0.5rem;
+    }
+    .choices {
+        width: 30%;
+        padding: 0.5rem;
+    }
+
+    #userFist, #compFist {
+        width: 30%;
+        padding: 0.5rem;
+    }
 }

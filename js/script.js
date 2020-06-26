@@ -34,11 +34,11 @@ document.getElementById("startGame").addEventListener('click', function(){
         document.querySelector("h5").style.display = "block";
         document.getElementById("playAgain").style.display = "inline-block";
         document.getElementById("startOver").style.display = "inline-block";
-    }, 1000);
+    }, 750);
     setTimeout(function(){
         document.getElementById("userFist").setAttribute('src', "img/"+userChoice+".svg");
         document.getElementById("compFist").setAttribute('src', "img/"+compChoice+".svg");
-    }, 900);
+    }, 700);
 });
 
 function compareChoices() {
@@ -55,7 +55,7 @@ function compareChoices() {
             userChoiceHand.innerText = userChoice;
             compChoiceHand.innerText = compChoice;
             result.innerText = "Ooh, it's a tie!";
-            }, 1000);
+            }, 750);
     } else if (userChoice === choices[0]) {
         if (compChoice === choices[2]) {
             userCounter += 1;
@@ -64,7 +64,7 @@ function compareChoices() {
                 userChoiceHand.innerText = userChoice;
                 compChoiceHand.innerText = compChoice;
                 result.innerText = "You win this round!";
-            }, 1000);
+            }, 750);
         } else if (compChoice === choices[1]) {
             compCounter += 1;
             setTimeout(function(){
@@ -72,7 +72,7 @@ function compareChoices() {
                 userChoiceHand.innerText = userChoice;
                 compChoiceHand.innerText = compChoice;
                 result.innerText = "The computer wins this round.";
-            }, 1000);
+            }, 750);
         }
     } else if (userChoice === choices[2]) {
         if (compChoice === choices[0]) {
@@ -82,7 +82,7 @@ function compareChoices() {
                 userChoiceHand.innerText = userChoice;
                 compChoiceHand.innerText = compChoice;
                 result.innerText = "The computer wins this round.";
-            }, 1000);
+            }, 750);
         } else if (compChoice === choices[1]) {
             userCounter += 1;
             setTimeout(function(){
@@ -90,7 +90,7 @@ function compareChoices() {
                 userChoiceHand.innerText = userChoice;
                 compChoiceHand.innerText = compChoice;
                 result.innerText = "You win this round!";
-            }, 1000);
+            }, 750);
         }
     } else if (userChoice === choices[1]) {
         if (compChoice === choices[0]) {
@@ -100,7 +100,7 @@ function compareChoices() {
                 userChoiceHand.innerText = userChoice;
                 compChoiceHand.innerText = compChoice;
                 result.innerText = "You win this round!";
-            }, 1000);
+            }, 750);
         } else if (compChoice === choices[2]) {
             compCounter += 1;
             setTimeout(function(){
@@ -108,7 +108,7 @@ function compareChoices() {
                 userChoiceHand.innerText = userChoice;
                 compChoiceHand.innerText = compChoice;
                 result.innerText = "The computer wins this round.";
-            }, 1000);
+            }, 750);
         }
     }
 }
