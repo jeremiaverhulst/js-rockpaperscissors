@@ -148,8 +148,8 @@ document.getElementById("playAgain").addEventListener('click', function(){
 document.getElementById("startOver").addEventListener('click', function(){
     userCounter = 0;
     compCounter = 0;
-    userScore.innerText = toString(userCounter);
-    compScore.innerText = toString(compCounter);
+    userScore.innerText = userCounter;
+    compScore.innerText = compCounter;
     document.getElementById("playerChoice").style.display = "block";
     document.getElementById("gameAnimation").style.display = "none";
     document.getElementById("startGame").style.display = "inline-block";
