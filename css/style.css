@@ -211,24 +211,33 @@ footer {
     margin-top: 2rem;
 }
 
-
 @media (max-width: 678px) {
 
     body {
         font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    h1 {
+        padding-top: 1rem;
     }
 
     h3, h5 {
-        font-size: 1.8rem;
-    }
-
-    h4 {
         font-size: 1.6rem;
     }
 
-    #playerChoice {
-        margin: 2rem 0.5rem;
+    h4 {
+        font-size: 1.4rem;
     }
+
+    #generalInfo, #playerChoice, #gameInfo {
+        margin: 1rem 0.5rem;
+    }
+
+    #gameAnimation {
+        margin: 1rem 0.5rem;
+    }
+
     .choices {
         width: 30%;
         padding: 0.5rem;
