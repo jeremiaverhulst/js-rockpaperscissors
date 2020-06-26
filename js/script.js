@@ -31,6 +31,7 @@ document.getElementById("startGame").addEventListener('click', function(){
     compareChoices();
     setTimeout(function(){
         document.querySelector("h4").style.display = "block";
+        document.querySelector("h5").style.display = "block";
         document.getElementById("playAgain").style.display = "inline-block";
         document.getElementById("startOver").style.display = "inline-block";
     }, 1000);
