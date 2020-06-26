@@ -138,6 +138,7 @@ document.getElementById("playAgain").addEventListener('click', function(){
     document.getElementById("gameAnimation").style.display = "none";
     document.getElementById("playAgain").style.display = "none";
     document.getElementById("startGame").style.display = "inline-block";
+    document.getElementById("startOver").style.display = "none";
     document.querySelector("h4").style.display = "none";
     document.querySelector("h5").style.display = "none";
     document.getElementById("userFist").setAttribute('src', "img/rock.svg");
